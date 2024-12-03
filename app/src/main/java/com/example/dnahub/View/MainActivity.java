@@ -1,4 +1,4 @@
-package com.example.dnahub;
+package com.example.dnahub.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+
+import com.example.dnahub.R;
 
 public class MainActivity extends AppCompatActivity {
 

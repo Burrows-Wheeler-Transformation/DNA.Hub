@@ -1,4 +1,4 @@
-package com.example.dnahub;
+package com.example.dnahub.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+
+import com.example.dnahub.R;
 
 public class researchActivity extends AppCompatActivity {
 

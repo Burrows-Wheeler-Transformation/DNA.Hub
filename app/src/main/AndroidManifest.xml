@@ -13,13 +13,13 @@
         android:theme="@style/Theme.DNAHub"
         tools:targetApi="31">
         <activity
-            android:name=".resultActivity"
+            android:name=".View.resultActivity"
             android:exported="false" />
         <activity
-            android:name=".researchActivity"
+            android:name=".View.researchActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".View.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
