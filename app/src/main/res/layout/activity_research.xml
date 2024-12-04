@@ -30,19 +30,18 @@
         app:layout_constraintVertical_bias="0.133" />
 
     <EditText
-        android:id="@+id/sequence"
+        android:id="@+id/motive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
         android:ems="10"
-        android:hint="Sequence"
+        android:hint="motive Pattern"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/introduction"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
 
     <CheckBox
         android:id="@+id/checkbox1"
@@ -62,8 +61,12 @@
         android:layout_height="43dp"
         android:layout_marginTop="16dp"
         android:text="Complement String"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkbox1"
-        tools:layout_editor_absoluteX="98dp" />
+        app:layout_constraintVertical_bias="0.005" />
 
     <CheckBox
         android:id="@+id/checkbox3"
@@ -91,6 +94,33 @@
         app:layout_constraintTop_toBottomOf="@+id/checkbox3"
         app:layout_constraintVertical_bias="0.134" />
 
+    <CheckBox
+        android:id="@+id/checkbox5"
+        android:layout_width="213dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="152dp"
+        android:text="Find Genes in Sequence"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox4"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <EditText
+        android:id="@+id/sequence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Sequence"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221" />
+
     <Button
         android:id="@+id/submit"
         android:layout_width="wrap_content"
@@ -98,10 +128,10 @@
         android:text="submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837" />
+        app:layout_constraintVertical_bias="0.91" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

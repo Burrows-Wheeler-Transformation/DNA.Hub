@@ -1,8 +1,13 @@
 package com.example.dnahub.Controller;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Results {
 
-    String sequence;
+    static String sequence;
 
     public Results(String seq) {
         this.sequence = seq.toUpperCase();
@@ -49,5 +54,27 @@ public class Results {
     }
     public String reversedComp () {
         return createComp().reverse().toString();
+    }
+
+    public List<Integer> findMotives (String pattern) {
+        List<Integer> positions = new ArrayList<>();
+        int index = 0;
+
+        while ((index = sequence.indexOf(pattern, index)) != -1) {
+            positions.add(index);
+            index++;
+        }
+        return positions;
+    }
+    public static List<String> findStartStopCodons() {
+        List<String> results = new ArrayList<>();
+        Pattern pattern = Pattern.compile("ATG.*?(TAA|TAG|TGA)");
+        Matcher matcher = pattern.matcher(sequence);
+
+        while (matcher.find()) {
+            results.add(matcher.group());
+        }
+
+        return results;
     }
 }
