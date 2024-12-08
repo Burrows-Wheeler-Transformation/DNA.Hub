@@ -18,7 +18,7 @@ public class resultActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String seq = intent.getStringExtra("sequence");
         TextView text = findViewById(R.id.result);
-        text.setText("The Sequence " + seq + " with the length " + seq.length() + "..." );
+        text.setText("The Sequence " + seq + " with the length " + seq.length() + "...");
 
     }
 }

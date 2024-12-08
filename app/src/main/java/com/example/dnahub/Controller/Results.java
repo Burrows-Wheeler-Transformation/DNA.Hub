@@ -45,9 +45,6 @@ public class Results {
                 case 'G':
                     res.append('C');
                     break;
-                default:
-                    System.out.println("Not a valid character... Skipped");
-                    break;
             }
         }
         return res;
